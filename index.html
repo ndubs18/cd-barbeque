@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="./styles.css">
 	<title>C &amp D Barbeque</title>
@@ -20,21 +20,75 @@
 				<a href="#menu">Menu</a>
 				<a href="#contact">Contact</a>
 			</div>
-			<button id="catBtn">Catering </button>
 		</nav>
 		<div id="headCaption">
 			<div id="bgOverlay">
-				<h2>You're favorite barbeque joint in Portland</h2>
-				<button id="menuBtn">Menu</button>
 			</div>
 		</div>
 
 	</header>
-	<section id="hhMenus">
-		<h1> Happy Hour </h1>
-		<img id="hhFood" src="./assets/hhFood.jpg" />
-		<img id="hhDrink" src="./assets/hhDrink.jpg" />
+	<section id="info">
+		<div class="topic">
+			<h4>HAPPY HOUR</h4>
+			<p> Everyday from 3-5pm</p>
+		</div>
+		<div class="topic">
+			<h4>CATERING</h4>
+			<p>We offer catering service! For more information give us a call at 503-292-2128
+			</p>
+
+		</div>
+		<div class="topic">
+			<h4>BUSINESS HOURS</h4>
+		</div>
 	</section>
+	<section id="menu">
+		<h1 style="font-size: 2.15rem ">Menu</h1>
+		<div id="regMenu">
+			<ul>
+				<li>
+					<h3>Smoked Chicken Wings <span>$10.99</span></h3>
+					<div class="description">
+						<p>Served with sliced carrots, celery, and blue cheese</p>
+					</div>
+				</li>
+				<li>
+					<h3>Sandwiches <span>$16.99</span></h3>
+					<div class="description">
+						<p>Smoked brisket or chicken comes served on a bun with coleslaw
+							and
+							pickles</p>
+					</div>
+				</li>
+				<li>
+					<h3>Plates<span>$19.99</span></h3>
+					<div class="description">
+						<p>Comes with 1 side and cornbread. Choice of meat:
+						<ul>
+							<li>1/2 smoked chicken</li>
+							<li>1/4 rack Baby Back ribs[3]</li>
+							<li>8oz brisket</li>
+						</ul>
+						</p>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+		<div id="hhMenus">
+			<!--<h1> Happy Hour </h1>-->
+			<div id="menuContainer">
+				<img src="./assets/hhFood.jpg" />
+				<img src="./assets/hhDrink.jpg" />
+			</div>
+		</div>
+
+	</section>
+	<footer>
+		<b>
+			<p>C & D Barbeque &nbsp 460 SW Miller Rd. Portland, Oregon 97229 &nbsp 503-292-2128</p>
+		</b>
+	</footer>
 </body>
 
 </html>

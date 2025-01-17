@@ -10,31 +10,45 @@
 	margin: 0;
 	font-family: "Raleway", serif;
 	font-optical-sizing: auto;
+	scroll-behavior: smooth;
+	list-style: none;
+}
+
+header,
+section {
+	margin: 3rem auto;
+	width: 85%;
 }
 
 header {
-	padding: 1.5rem 0 10rem;
-	height: 100vh;
+	padding: 1.5rem 0 0;
+	height: 90vh;
 	width: 85%;
-	margin: 0 auto;
+	margin: 0 auto 10rem;
 }
 
 
 #cdLogo {
-	width: 14rem;
-	height: 4rem;
+	width: 18rem;
+	height: 5rem;
 }
 
 nav {
+	width: 100%;
+	padding: 3rem;
 	display: flex;
+	justify-content: center;
 	flex-direction: row;
 	align-items: center;
-	margin-bottom: 1.5rem
+	margin-bottom: 1.5rem;
+	position: relative;
 }
 
 #navLinks {
-	width: 100%;
+	position: absolute;
 	text-align: right;
+	right: 0;
+
 }
 
 #navLinks a {
@@ -46,7 +60,7 @@ nav {
 
 
 #headCaption {
-	height: 100%;
+	height: 90%;
 	width: 100%;
 	background-image: url(./assets/bbqStock.jpg);
 	background-size: cover;
@@ -56,8 +70,10 @@ nav {
 #bgOverlay {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 0, 0, .2);
+	background-position: center;
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -67,32 +83,98 @@ header h2 {
 	text-align: center;
 	font-size: 2.5rem;
 	color: white;
-	position: relative;
-	bottom: 5rem;
+	margin-bottom: 1rem;
+}
+
+#menuBtn {
+	width: 5rem;
+	padding: 0.5rem;
+	margin: 0 auto;
+}
+
+/*
+* Info Section
+*/
+section#info {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+#info .topic {
+	margin: 1.5rem 0;
+}
+
+#info .topic h4 {
+	margin-bottom: 0.75rem;
+	font-size: 1.25rem;
 }
 
 /*
 * Menu Section
 */
-section#hhMenus {
-	width: 85%;
-	margin: 0 auto;
+
+#regMenu {
+	margin-bottom: 2rem;
+}
+
+#regMenu>ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	justify-content: center;
+
+}
+
+#regMenu>ul li {
+	width: 18rem;
+}
+
+#regMenu>ul li h3 {
+	position: relative;
+}
+
+#regMenu>ul li h3 span {
+	position: absolute;
+	right: 0;
+}
+
+#regMenu>ul .description p {
+	width: 100%;
+}
+
+#hhMenus {
+	margin: 1rem auto;
 	padding-bottom: 2rem;
 }
 
-section#hhMenus h1 {
+#menuContainer {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+#hhMenus h1 {
+	font-size: 1.5em;
 	margin-bottom: 1.5rem;
 }
 
 #hhMenus img {
-	width: 48%;
+	width: 25rem;
+	object-fit: cover;
 }
 
-#hhFood {
-	margin-bottom: 2rem;
-}
 
-#hhDrink {
-	position: relative;
-	right: 0px;
+/*
+* Footer
+*/
+
+footer {
+	font-size: 1rem;
+	width: 100%;
+	text-align: center;
+	padding: 2rem 0;
 }
