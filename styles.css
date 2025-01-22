@@ -14,6 +14,10 @@
 	list-style: none;
 }
 
+body {
+	background-color: #ffff
+}
+
 header,
 section {
 	margin: 3rem auto;
@@ -24,7 +28,7 @@ header {
 	padding: 1.5rem 0 0;
 	height: 90vh;
 	width: 85%;
-	margin: 0 auto 10rem;
+	margin: 0 auto 12rem;
 }
 
 
@@ -52,22 +56,26 @@ nav {
 }
 
 #navLinks a {
-	margin: 0 0 0 1.5rem;
+	margin: 0 0 0 1.25rem;
 	color: black;
 	text-decoration: none;
 	font-size: 1.15rem;
+	padding: 0.4rem;
+	border-radius: 6%;
 }
 
 
 #headCaption {
 	height: 90%;
 	width: 100%;
-	background-image: url(./assets/bbqStock.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: url(./assets/wings1.jpg);
+	object-fit: cover;
+	background-size: fill;
+	background-position: center;
 }
 
 #bgOverlay {
+	background-color: rgba(0, 0, 0, .3);
 	height: 100%;
 	width: 100%;
 	background-position: center;
@@ -78,12 +86,13 @@ nav {
 }
 
 header h2 {
-	width: 100%;
-	padding: 0 3rem;
+	width: auto;
+	padding-bottom: 0.5rem;
 	text-align: center;
 	font-size: 2.5rem;
 	color: white;
 	margin-bottom: 1rem;
+	border-bottom: 2px solid white;
 }
 
 #menuBtn {
@@ -104,6 +113,10 @@ section#info {
 
 #info .topic {
 	margin: 1.5rem 0;
+}
+
+#info .topic:nth-child(3) p {
+	margin-bottom: 0.4rem;
 }
 
 #info .topic h4 {
@@ -167,6 +180,52 @@ section#info {
 	object-fit: cover;
 }
 
+/*
+* Gallery
+*/
+#ribs-hori {
+	grid-area: ribs-hori
+}
+
+#ribs-vert {
+	grid-area: ribs-vert
+}
+
+#bar1 {
+	grid-area: bar
+}
+
+#layout {
+	display: grid;
+	grid-template-colums: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "ribs-hori ribs-hori ribs-hori ribs-vert ribs-vert"
+		"bar bar bar ribs-vert ribs-vert"
+		"bar bar bar . .";
+	margin: 0 auto;
+	width: 85%;
+}
+
+#layout img {
+	object-fit: fill;
+	object-position: center;
+	margin: 1rem auto;
+}
+
+#layout img.hori {
+	width: 32rem;
+	height: 22rem;
+}
+
+#layout img.vert {
+	height: 32rem;
+	width: 25rem;
+}
+
+#bar1 {
+	height: 23rem;
+	width: 38rem;
+}
 
 /*
 * Footer
