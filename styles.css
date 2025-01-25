@@ -63,7 +63,7 @@ nav {
 
 #navLinks a {
 	border-bottom: 1px solid black;
-	margin: 0 0 0 1.25rem;
+	margin: 0 0 0 2rem;
 	color: black;
 	text-decoration: none;
 	font-size: 1.15rem;
@@ -132,16 +132,16 @@ section#info {
 	height: 3rem;
 }
 
-
-
-#info .topic:nth-child(3) p {
-	margin-bottom: 0.4rem;
-}
-
 #info .topic h4 {
+	letter-spacing: 1.25px;
 	font-weight: 650;
 	margin-bottom: 0.75rem;
 	font-size: 1.2rem;
+}
+
+#info .topic p {
+	letter-spacing: 1.25px;
+	line-height: 25px;
 }
 
 #info .topic span {
@@ -170,19 +170,20 @@ section>h1 {
 #regMenu>ul {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2rem;
+	gap: 2.5rem;
 	justify-content: center;
 
 }
 
 #regMenu>ul li {
+	letter-spacing: 1.5px;
 	line-height: 20px;
 	width: 19rem;
 }
 
 #regMenu>ul li h3 {
-	letter-spacing: 1.25px;
-	font-weight: 575;
+	letter-spacing: 1.75px;
+	font-weight: 550;
 	margin-bottom: 5px;
 	position: relative;
 }
@@ -193,7 +194,13 @@ section>h1 {
 }
 
 #regMenu>ul .description p {
+	line-height: 24px;
+	letter-spacing: 1.35px;
 	width: 100%;
+}
+
+.choice {
+	font-weight: 500;
 }
 
 section#menu>h2 {
@@ -439,6 +446,10 @@ footer img {
 		text-align: center;
 	}
 
+	#navLinks a {
+		margin: 0 1.5rem;
+	}
+
 	#hamburger {
 		display: flex;
 		position: absolute;
@@ -455,6 +466,10 @@ footer img {
 	#info .topic {
 
 		height: auto;
+	}
+
+	section#info {
+		margin-bottom: 4rem;
 	}
 
 	footer p {
